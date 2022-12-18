@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolor quo fugit voluptate commodi provident sit minus natus, ipsum quibusdam architecto deleniti est nulla! Dicta modi distinctio placeat ipsum quae.</p>
+        <p id="time">"this text  will change into time</p>
+        <p>the current date and time is:<span id ="timespan">current date and time</span></p>
+    </div>
+    <script>
+        function greet(){
+            console.log("hello world!!!")
+        }
+        //  let Timeout=setTimeout(greet,5000) //calling the function once after given time
+        //  clearTimeout(Timeout)
+        // let interval= setInterval(greet,1000);
+        // clearInterval(interval,1000)
+        // setInterval(greet,1000);
+        function dispplay(){
+            let dateTime= new Date();
+            console.log(dateTime);
+            document.getElementById("time").innerHTML=dateTime
+            document.getElementById("timespan").innerHTML=dateTime 
+        }
+        setInterval(display,1000);
+
+    </script>
+    
+</body>
+</html>
