@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainDivID"class="mainDivClass">
+        <h1 id="heading">events and handlers</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fuga tempora neque dolor eveniet minima nisi recusandae excepturi saepe magni quis dicta dolorum alias, officia doloremque ipsum nihil molestiae error?</p>
+        <input id="btn" type="button" value="submit" onclick="togglePara()">
+        <ul>
+            <li>home</li>
+            <li>about me</li>
+            <li>next page</li>
+            <li>setting</li>
+        </ul>
+    </div>
+    <script>
+        let paragraph=document.getElementById("para");
+        let button=document.getElementById("btn")
+        // let main=document.getElementById("mainDivID");
+        // console.log(main)
+        // function hidePara(){
+        //     paragraph.style.display="none";
+        function togglePara(){
+            if(paragraph.style.display !="none")
+            {
+                paragraph.style.display = "none";
+            }
+            else
+            {
+                paragraph.style.display="block";
+            }
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>
